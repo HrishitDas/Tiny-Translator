@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <title>Do you Want To Translate?</title>
+  <link rel="stylesheet" href="style1.css"/>
+</head>
+<body>
+<header class="site__header island">
+  <div class="wrap">
+   <span id="animationSandbox" style="display: block;"><h1 class="site__title mega" id="box_text">Hello World</h1></span>
+    <p><center><span class="beta subhead">Tiny Translator</span></center></p>
+<main class="site__content island" role="content">
+    <center><form name="out">
+      <select class="input input--dropdown" name="in">
+        <optgroup label="Language Options:">
+		  <option hidden value="Language">Language</option>
+          <option value="english">English</option>
+		  <option value="bengali">Bengali</option>
+		  <option value="hindi">Hindi</option>
+          <option value="spanish">Spanish</option>
+          <option value="french">French</option>
+          <option value="japanese">Japanese</option>
+        </optgroup>
+      </select></center>
+      <center><input class="butt" id="btn" type="button" value="Translate" onclick="go(document.out.in.options[document.out.in.selectedIndex].value)"></center>
+    </form>
+    <hr/>
+	</header>
+  </div>
+</main>
+<script>
+    function go (x)
+	{    
+        switch(x)
+		{
+            case "english":
+                document.getElementById("box_text").innerHTML = "Hello World";
+                break;
+			case "bengali":
+                document.getElementById("box_text").innerHTML = "ওহে বিশ্ব";
+                break;
+			case "hindi":
+                document.getElementById("box_text").innerHTML = "नमस्ते दुनिया";
+                break;					
+            case "spanish":
+                document.getElementById("box_text").innerHTML = "Hola Mundo";
+                break;
+            case "french":
+                document.getElementById("box_text").innerHTML = "Bonjour Le Monde";
+                break;
+            case "japanese":
+                document.getElementById("box_text").innerHTML = "こんにちは世界";
+                break;
+        }
+    }
+</script>
+</body>
+</html>

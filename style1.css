@@ -1,0 +1,48 @@
+body{
+background:url(background.png);
+background-size:cover;
+}
+.wrap{
+border-radius:5px;
+background:black;
+padding:20px;
+width:370px;
+margin:auto;
+color:#FFF;
+font-size:25px;
+font-family:Verdana;
+margin-top:100px;
+opacity:0.6;
+}
+.wrap h1{
+text-align:center;
+margin:0;
+padding:0;
+color:#FFA500;
+}
+.wrap input, select{
+padding:12px;
+margin:8px;
+display:inline-block;
+border:1px solid #ccc;
+border-radius:4px;
+box-sizing:border-box;
+font-size:18px;
+background:green;
+color:white;
+opacity:0.9;
+}
+.wrap input[type=button]{
+background:#FFA500;
+width:50%;
+border:none;
+cursor:pointer;
+}
+input[type=button]:hover{
+background:violet;
+transition:0.6s;
+}
+option{
+color:white;
+background:green;
+}
